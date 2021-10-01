@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400;500;600&display=swap");
+
+body {
+  font-family: "Noto Sans Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7fa;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 80%;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.form__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__input {
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #e6e6ec;
+  width: 50%;
+  padding: 0.8em 1em;
+  margin: 1em;
+  color: #32336a;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.form__input:focus {
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
+}
+
+.form__input--submit {
+  background-color: #8062e1;
+  border-color: #8062e1;
+  color: #ffffff;
+  width: 25%;
+  cursor: pointer;
+}
+
+.form__input--submit:hover {
+  filter: brightness(0.95);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__group--title {
+  font-size: 14px;
+  text-align: left;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 25%;
+
+  color: #4f517e;
+}
+
+h1 {
+  color: #020447;
+  margin: 1em;
+  text-align: center;
+}
+
+.error {
+  border-color: #d87174;
+  background-color: #fcf1f2;
+}
+
+.form__group--title--error {
+  color: #dc8286;
+}
+
+.correct {
+  border-color: #8062e1;
+  background-color: #f4f1ff;
+}
+
+.form__input--select {
+  width: 53%;
+}

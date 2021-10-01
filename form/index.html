@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form with postcode validation</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <h1>Podaj wymagane dane do wysyłki</h1>
+  <form action="#" method="POST" class="form" onsubmit="">
+    <div class="form__group">
+        <label for="name" class="form__group--title ">Imię</label>
+        <input type="text" name="name" id="name" class="form__input "  />
+    </div>
+    <div class="form__group">
+      <label for="lastName" class="form__group--title">Nazwisko</label>
+      <input type="text" name="lastName" id="lastName" class="form__input "  />
+    </div>
+    <div class="form__group">
+      <label for="email" class="form__group--title">E-mail</label>
+      <input type="text" name="email" id="email" class="form__input" />
+    </div>
+    <div class="form__group">
+      <label for="phone" class="form__group--title">Nr. telefonu</label>
+      <input type="text" name="phone" id="phone" class="form__input" maxlength="9" />
+    </div>
+    <div class="form__group">
+      <label for="postcode" class="form__group--title">Kod pocztowy</label>
+      <input type="text" name="postcode" id="postcode" class="form__input"  />
+    </div>
+    <div class="form__group">
+      <label for="city" class="form__group--title">Miasto</label>
+      <select name="city" id="city" class="form__input form__input--select">
+      </select>
+    </div>
+    <div class="form__group">
+      <label for="street" class="form__group--title">Ulica</label>
+      <select name="street" id="street" class="form__input form__input--select"></select>
+    </div>
+    <div class="form__group">
+      <label for="houseNo" class="form__group--title">
+        Numer ulicy i domu/mieszkania
+      </label>
+      <input type="text" name="houseNo" id="houseNo" class="form__input" />
+      </div>
+
+      <input type="submit" value="Zamów wysyłkę" class="form__input form__input--submit">
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  </div>
+</body>
+
+</html>
